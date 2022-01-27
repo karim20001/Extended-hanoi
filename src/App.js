@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import './mil.css'
+import {Mil, Floor, Mil3, Mil2} from './components/createMilNode';
+import CreateDisks from './animations/abc';
+import { ContinueBotton, EndtBotton, FasterButton, ManualtBotton, ResetBotton, SlowerButton, StartBotton, StopBotton } from './components/Buttons';
+//import {CreateDisks} from './components/Disks'
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+     <div className="container" id="page2">
+       <div className="mil1">
+         <Mil />
+         <Mil2 />
+         <Mil3 />
+         <Floor />
+         <StartBotton />
+         <EndtBotton />
+         <ContinueBotton />
+         <ResetBotton />
+         <ManualtBotton />
+         <StopBotton />
+         <FasterButton />
+         <SlowerButton />
+       </div>
+      <CreateDisks />
+     </div>
+    );
+
 }
 
 export default App;
+
